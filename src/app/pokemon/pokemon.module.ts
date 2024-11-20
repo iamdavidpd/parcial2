@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PokemonListarComponent } from './pokemon-listar/pokemon-listar.component';
+import { PokemonDetalleComponent } from './pokemon-listar/pokemon-detalle/pokemon-detalle.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: []
+  declarations: [
+    PokemonListarComponent,
+    PokemonDetalleComponent
+  ]
 })
 export class PokemonModule { }
