@@ -1,1 +1,6 @@
-<p>pokemon-listar works!</p>
+<div class="card" style="width: 18rem;" *ngFor="let p of pokemons">
+    <img src = {{p.sprites.front_default}} class="card-img-top" alt="..."> 
+    <div class="card-body">
+      <h5 class="card-title">{{p.name}}</h5>
+    </div>
+  </div>

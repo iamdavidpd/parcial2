@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PokemonListarComponent } from './pokemon-listar/pokemon-listar.component';
-import { PokemonDetalleComponent } from './pokemon-listar/pokemon-detalle/pokemon-detalle.component';
+import { PokemonDetalleComponent } from './pokemon-detalle/pokemon-detalle.component';
 
 @NgModule({
   imports: [
@@ -10,6 +10,7 @@ import { PokemonDetalleComponent } from './pokemon-listar/pokemon-detalle/pokemo
   declarations: [
     PokemonListarComponent,
     PokemonDetalleComponent
-  ]
+  ],
+  exports: [PokemonListarComponent]
 })
 export class PokemonModule { }
