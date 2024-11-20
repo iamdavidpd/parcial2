@@ -19,11 +19,6 @@ export class PokemonDetalleComponent implements OnInit {
     }
 
     ngOnInit(){
-      if(this.pokemon === undefined){
-        this.pokemonId = this.route.snapshot.paramMap.get('id')!
-        if(this.pokemonId){
-          this.getPokemon();
+        this.getPokemon();
         }
-      }
     }
-  }
